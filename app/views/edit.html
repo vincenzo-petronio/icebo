@@ -8,12 +8,8 @@
 </div>
 
 <div class="jumbotron">
-    <div class="row">
-        <div>
-            <p><a class="btn btn-lg btn-default" ng-click="rndmData.doClick(item, $event)">Random<br><span class="glyphicon glyphicon-ok"></span></a></p>
-            <br>
-            <h3>{{rndmData.fromServer}}</h3>
-        </div>
+    <div ng-repeat="f in listaFrasi">
+        <p>{{f.frase}}</p>
     </div>
 </div>
 
