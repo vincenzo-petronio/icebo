@@ -3,9 +3,11 @@
 </div>
 
 <div class="jumbotron">
-    <p>This is the home view.</p>
-
-    <p><a class="btn btn-lg btn-default" ng-href="#">Random!<span class="glyphicon glyphicon-ok"></span></a></p>
+    <div>
+        <p><a class="btn btn-lg btn-default" ng-click="rndmData.doClick(item, $event)">Random!<span class="glyphicon glyphicon-ok"></span></a></p>
+        <br>
+        <h3>{{rndmData.fromServer}}</h3>
+    </div>
 </div>
 
 <div class="footer">
