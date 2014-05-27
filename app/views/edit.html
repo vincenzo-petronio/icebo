@@ -8,9 +8,22 @@
 </div>
 
 <div class="jumbotron">
-    <div ng-repeat="f in listaFrasi">
-        <p>{{f.frase}}</p>
-    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Frase</th>
+                <th>Ripetizione</th>
+                <th>Edit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="f in listaFrasi" class="text-left">
+                <td>{{f.frase}}</td>
+                <td>{{f.contatore}}</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 
 <div class="footer">

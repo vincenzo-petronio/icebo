@@ -13,4 +13,4 @@
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    Yeoman, AngularJS, Bootstrap,
+    Yeoman, Bower, Grunt, AngularJS, Bootstrap,
