@@ -17,7 +17,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="f in listaFrasi" class="text-left">
+            <tr ng-repeat="f in listaFrasi | orderBy:'contatore':true" class="text-left">
                 <td>{{f.frase}}</td>
                 <td>{{f.contatore}}</td>
                 <td></td>
