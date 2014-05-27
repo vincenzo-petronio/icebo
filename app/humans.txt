@@ -1,0 +1,16 @@
+# humanstxt.org/
+
+# TEAM
+
+    Vincenzo Petronio -- dev -- google.com/+VincenzoPetronio
+
+# SITE
+
+    Last update: 2014/05/27
+    Doctype: HTML5
+    Software: WebStorm 8, Sublime Text 2, Google Chrome,
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Yeoman, AngularJS, Bootstrap,
