@@ -2,7 +2,8 @@
 
 # TEAM
 
-    Vincenzo Petronio -- dev -- google.com/+VincenzoPetronio
+    Vincenzo Petronio -- Front End -- google.com/+VincenzoPetronio
+    Davide Balistreri -- Back End & DBA
 
 # SITE
 
@@ -13,4 +14,4 @@
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    Yeoman, Bower, Grunt, AngularJS, Bootstrap,
+    Yeoman, Bower, Grunt, AngularJS, Bootstrap, PHP
