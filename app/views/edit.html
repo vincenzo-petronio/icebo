@@ -1,7 +1,7 @@
 <div class="header">
     <ul class="nav nav-pills pull-right">
-        <li class="active"><a ng-href="#/home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-        <li><a ng-href="#/edit"><span class="glyphicon glyphicon-list"></span> Edit</a></li>
+        <li><a ng-href="#/home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li class="active"><a ng-href="#/edit"><span class="glyphicon glyphicon-list"></span> Edit</a></li>
         <li><a ng-href="#/about"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
     </ul>
     <h3 class="text-muted">icebo</h3>
@@ -32,7 +32,7 @@
 
     <div class="row">
         <div class="input-group">
-            <input type="text" class="form-control input-lg" placeholder="Inserisci qui una nuova frase!">
+            <input type="text" ng-model="nuovafrase" class="form-control input-lg" placeholder="Inserisci qui una nuova frase!">
             <span class="input-group-btn">
                 <button class="btn btn-primary btn-lg" ng-click="addFrase()" type="button">Add</button>
             </span>
