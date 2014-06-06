@@ -3,7 +3,7 @@
 angular.module('iceboApp')
   .controller('EditCtrl', function ($scope, $http) {
     $http( {
-        method: 'POST',
+        method: 'GET',
         url: 'http://www.dav91.altervista.org/icebotari/webservice_json.php?action=getListaFrasi'
     }).success(function(data) {
         $scope.listaFrasi = data; // response data
@@ -12,14 +12,15 @@ angular.module('iceboApp')
     });
     $scope.addFrase = function(item, event) {
         console.log('HTTP Req: ' + $scope.nuovafrase);
-
-        var responsePromise = $http.get('http://www.dav91.altervista.org/icebotari/webservice_json.php?action=aggiungiFrase&frase=' + $scope.nuovafrase, {});
-        responsePromise.success(function(dataFromServer) {
-            console.log('HTTP Res: ' + dataFromServer.errorDescription);
-        });
-        responsePromise.error(function() {
-            alert('Submitting form failed!');
-        });
+        if ($scope.nuovafrase != '') {
+            var responsePromise = $http.get('http://www.dav91.altervista.org/icebotari/webservice_json.php?action=aggiungiFrase&frase=' + $scope.nuovafrase, {});
+            responsePromise.success(function (dataFromServer) {
+                console.log('HTTP Res: ' + dataFromServer.errorDescription);
+            });
+            responsePromise.error(function () {
+                alert('Submitting form failed!');
+            });
+        }
     };
     $scope.editCounter = function(count) {
         console.log('Edit Counter: ' + this.f.idFrase + " " + count);

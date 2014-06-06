@@ -9,7 +9,7 @@
 
     Last update: 2014/05/27
     Doctype: HTML5
-    Software: WebStorm 8, Sublime Text 2, Google Chrome,
+    Software: WebStorm 8, Sublime Text 2, Google Chrome & Batarang,
 
 # TECHNOLOGY COLOPHON
 

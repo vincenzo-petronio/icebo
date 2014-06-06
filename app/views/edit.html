@@ -32,12 +32,14 @@
 
     <div class="row">
         <div class="input-group">
-            <input type="text" ng-model="nuovafrase" class="form-control input-lg" placeholder="Inserisci qui una nuova frase!">
+            <input type="text" ng-model="nuovafrase" ng-minlength="2" required class="form-control input-lg" placeholder="Inserisci qui una nuova frase!">
             <span class="input-group-btn">
                 <button class="btn btn-primary btn-lg" ng-click="addFrase()" type="button">Add</button>
             </span>
         </div>
     </div>
+
+    <br>
 </div>
 
 <div class="footer">
