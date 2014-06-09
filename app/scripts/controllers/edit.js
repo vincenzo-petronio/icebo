@@ -2,6 +2,7 @@
 
 angular.module('iceboApp')
   .controller('EditCtrl', function ($scope, $http) {
+    $scope.nuovafrase = '';
     $http( {
         method: 'GET',
         url: 'http://www.dav91.altervista.org/icebotari/webservice_json.php?action=getListaFrasi'
@@ -12,7 +13,7 @@ angular.module('iceboApp')
     });
     $scope.addFrase = function(item, event) {
         console.log('HTTP Req: ' + $scope.nuovafrase);
-        if ($scope.nuovafrase != '') {
+        if ($scope.nuovafrase !== '') {
             var responsePromise = $http.get('http://www.dav91.altervista.org/icebotari/webservice_json.php?action=aggiungiFrase&frase=' + $scope.nuovafrase, {});
             responsePromise.success(function (dataFromServer) {
                 console.log('HTTP Res: ' + dataFromServer.errorDescription);

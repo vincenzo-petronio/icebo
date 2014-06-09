@@ -9,9 +9,9 @@
 
     Last update: 2014/05/27
     Doctype: HTML5
-    Software: WebStorm 8, Sublime Text 2, Google Chrome & Batarang,
+    Software: WebStorm 8, Sublime Text 2, Google Chrome & Batarang
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    Yeoman, Bower, Grunt, AngularJS, Bootstrap, PHP
+    Yeoman, Bower, Grunt, AngularJS, Bootstrap, PHP, Node.Js
