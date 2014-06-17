@@ -34,7 +34,7 @@
       "npm": ">= 1.0.0"
   },
   "scripts": {
-    "postinstall": "export HOME=/var/lib/openshift/53958d615973caba290006fd/app-root/runtime/repo; bower install",
+    "postinstall": "export HOME=/var/lib/openshift/53958d615973caba290006fd/app-root/runtime/repo; ./bower install",
     "test": "grunt test"
   },
   "bundleDependencies": [],
