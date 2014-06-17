@@ -34,7 +34,7 @@
       "npm": ">= 1.0.0"
   },
   "scripts": {
-    "build-js": "HOME=$HOME/app-root/runtime bower install && r.js -o build-config.js",
+    "postinstall": "export HOME=/var/lib/openshift/53958d615973caba290006fd/app-root/runtime/repo; ./node_modules/bower/bin/bower install",
     "test": "grunt test"
   },
   "bundleDependencies": [],
